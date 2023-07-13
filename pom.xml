@@ -17,25 +17,41 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+
+<!--		It simplifies the integration of JPA with Spring by providing default configurations,
+auto-configuration, and convenient abstractions-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
+<!--	It is for the Spring Boot Starter Web library.
+It provides essential dependencies for building web applications using Spring Boot.-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<!--		It is used to connect your Java application with a PostgreSQL database.
+        It provides the necessary classes and methods to establish a connection,
+        execute SQL queries, and interact with the PostgreSQL database-->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+<!--		It  is a Java library that helps reduce boilerplate code in your Java classes.
+It achieves this by providing annotations that automatically generate common code such as
+getters, setters, constructors, equals/hashCode methods-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+
+<!--		It is used for writing tests in a Spring Boot application-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
