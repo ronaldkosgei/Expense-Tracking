@@ -1,6 +1,6 @@
 package com.ExpenseTracking.config;
 
-import com.usermanagementlb.service.JwtService;
+import com.ExpenseTracking.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
