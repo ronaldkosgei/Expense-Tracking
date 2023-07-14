@@ -18,11 +18,16 @@
 	</properties>
 	<dependencies>
 
-<!--		It simplifies the integration of JPA with Spring by providing default configurations,
+<!--	It simplifies the integration of JPA with Spring by providing default configurations,
 auto-configuration, and convenient abstractions-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 <!--	It is for the Spring Boot Starter Web library.
@@ -40,7 +45,7 @@ It provides essential dependencies for building web applications using Spring Bo
 			<scope>runtime</scope>
 		</dependency>
 
-<!--		It  is a Java library that helps reduce boilerplate code in your Java classes.
+<!-- It  is a Java library that helps reduce boilerplate code in your Java classes.
 It achieves this by providing annotations that automatically generate common code such as
 getters, setters, constructors, equals/hashCode methods-->
 		<dependency>
@@ -50,31 +55,44 @@ getters, setters, constructors, equals/hashCode methods-->
 		</dependency>
 
 
-<!--		It is used for writing tests in a Spring Boot application-->
+<!-- It is used for writing tests in a Spring Boot application-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!-- It is alibrary, which stands for Java JWT (JSON Web Token)
+It is a library for working with JWTs in Java-based applications-->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-api</artifactId>
 			<version>0.11.5</version>
 		</dependency>
+
+<!-- The jjwt-impl library provides Java implementations for working with JWTs,
+including the creation, parsing, validation, and manipulation of JWTs-->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-impl</artifactId>
 			<version>0.11.5</version>
 		</dependency>
+
+<!-- It is a library used for working with JSON Web Tokens (JWTs) in Java applications.
+It is a popular method for securely transmitting information between parties as a JSON object-->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-jackson</artifactId>
 			<version>0.11.5</version>
 		</dependency>
+
+<!--		provides the necessary libraries and configurations for implementing security features in a Spring Boot application-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+
+<!--It is used to implement an OAuth 2.0 Resource Server in a Spring Boot application-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
